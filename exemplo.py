@@ -2,7 +2,8 @@
 from pypmml import Model
 
 # The model is from http://dmg.org/pmml/pmml_examples/KNIME_PMML_4.1_Examples/single_iris_dectree.xml
-model = Model.fromFile('pmmlFiles\single_iris_dectree.xml')
+# 
+model = Model.fromFile('pmmlFiles\single_iris_dectree.pmml')
 result = model.predict({
     "Sepal_Length" : 5.1,
     "Sepal_Width" : 3.5,
